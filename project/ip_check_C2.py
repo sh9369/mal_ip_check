@@ -275,38 +275,6 @@ class ESclient(object):
         # check sip，dip in last 24h
         return Second_check(self.__es_client, gte2, lte, time_zone, dip,index,mylog,siplis)
 
-'''
-checkAlert: 检查alert中关于c&c的info告警，获取dip
-'''
-# def checkAlert(index,gte,lte,time_zone,serverNum,dport):
-#     querystr={
-#         "query":"type:mal_ip",
-#         "analyze_wildcard": True
-#     }
-#     filetype='dip'
-#     rangetime={
-#         "@timestamp": {
-#             "gte": gte,
-#             "lte": lte,
-#             "format": "yyyy-MM-dd HH:mm:ss",
-#             "time_zone":time_zone
-#         }
-#     }
-#     aggs={
-#       "date_histogram": {
-#         "field": "@timestamp",
-#         "interval": "30m",
-#         "time_zone": time_zone,
-#         "min_doc_count": 1
-#       }
-#     }
-#     #get es list
-#     es = ESclient(server =serverNum,port=dport)
-#     # mylog.info('connected with es')
-#     ip_es_list = es.get_es_ip(index,gte,lte,filetype,time_zone,querystr,rangetime)
-#     allalerts=es.es_search_alert(index,gte,lte,filetype,time_zone,querystr,rangetime,aggs)
-#     return ip_es_list,es,allalerts
-
 
 '''
 searchAndInsert:1)modified the record (level:warning,add sip)
