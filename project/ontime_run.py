@@ -1,5 +1,5 @@
 #! /usr/bin/python
-# _*_ Coding:UTF-8 _*_
+# -*- coding:utf8 -*-
 # author: songh
 import os
 import time
