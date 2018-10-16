@@ -1,10 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import requests , re, json,time
+import requests,json,time
 from store_json import store_json
 import blacklist_tools
-
 
 def bitnodes(mylog):
     requests.adapters.DEFAULT_RETRIES = 5
