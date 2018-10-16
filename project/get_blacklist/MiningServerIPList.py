@@ -4,7 +4,7 @@
 import requests,datetime
 from store_json import store_json
 from lxml import etree
-from project import blacklist_tools
+import blacklist_tools
 
 
 def MiningServerIPList(mylog):

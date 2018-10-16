@@ -3,7 +3,7 @@
 
 import requests , re, json,time
 from store_json import store_json
-from project import blacklist_tools
+import blacklist_tools
 
 
 def bitnodes(mylog):

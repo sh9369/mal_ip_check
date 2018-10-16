@@ -5,7 +5,7 @@
 #update per 60mins
 import requests,time
 from store_json import store_json
-from project import blacklist_tools
+import blacklist_tools
 
 
 def bambenek_ip(mylog):

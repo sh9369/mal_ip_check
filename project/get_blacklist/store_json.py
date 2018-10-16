@@ -3,8 +3,8 @@ import json
 import datetime
 import sys,os
 sys.path.append('..')
-from project import parser_config
-from project import blacklist_tools
+import parser_config
+import blacklist_tools
 
 def store_json(dict,name):
 	'''

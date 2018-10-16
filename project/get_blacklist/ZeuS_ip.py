@@ -4,7 +4,7 @@
 
 import requests,time
 from store_json import store_json
-from project import blacklist_tools
+import blacklist_tools
 
 # update per 30mins
 def ZeuS_ip(mylog):
